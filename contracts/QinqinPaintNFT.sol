@@ -26,7 +26,7 @@ contract QinqinPaintNFT is ERC721, ERC721Enumerable, ERC721URIStorage, ERC721Bur
         _setTokenURI(tokenId, uri);
         return tokenId;
     }
-
+ 
     // The following functions are overrides required by Solidity.
 
     function _update(address to, uint256 tokenId, address auth)
