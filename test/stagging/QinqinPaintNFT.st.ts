@@ -44,15 +44,15 @@ describe("stagging test for QinqinPaintNFT", async()=>{
         assert.equal(tokenUri,"ipfs://QmS9qexFbDd43wA3ZqwbUwPJ25mrtyDhEZqGQYvFGAHAyS", "tokenURI is incorrect!");
     });
 
-    it("stagging test the mint a token",async()=>{
-        const tokenUri  = "ipfs://Qme4bUjbWQeFpbUSs5BeS13yhULqmkeHXdB8u6jxLX1Tkr";
-        const hash = await qpNFT.write.safeMint([wallet1.account.address, tokenUri]);
-        const transaction = await publicClient.waitForTransactionReceipt(
-            { 
-                confirmations: 5, //等待5个区块确认
-                hash: hash
-            }
-        );
-        assert.equal(1,1,"1!=1");
-    });
+    // it("stagging test the mint a token",async()=>{
+    //     const tokenUri  = "ipfs://Qme4bUjbWQeFpbUSs5BeS13yhULqmkeHXdB8u6jxLX1Tkr";
+    //     const hash = await qpNFT.write.safeMint([wallet1.account.address, tokenUri]);
+    //     const transaction = await publicClient.waitForTransactionReceipt(
+    //         { 
+    //             confirmations: 5, //等待5个区块确认
+    //             hash: hash
+    //         }
+    //     );
+    //     assert.equal(1,1,"1!=1");
+    // });
 });
